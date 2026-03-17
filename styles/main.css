@@ -1,35 +1,36 @@
 /* MAIN */
 
-* {
+html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black; /* чтобы не было белого */
 }
 
-body {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
+.all {
+    position: relative;
     width: 100%;
-    align-items: center;
+    max-width: 450px;
+    background-color: black;
     min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; /* центрируем на больших экранах */
+}
+
+/* Для телефонов */
+@media (max-width: 450px) {
+    .all {
+        max-width: 100%;
+    }
 }
 
 img {
     width: 100%;
 }
 
-.all {
-    position: relative;
-    width: 350px;
-    max-width: 450px;
-    background-color: black;
-    height: 100vh;
-    color: white;
-    display: flex;
-    flex-direction: column;
-}
 a{
     font-weight: bold;
 }
