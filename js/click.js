@@ -44,7 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Функция обновления баланса
     function updateBalanceDisplay() {
         html_for.textContent = formatNumber(balance)
-        userStars.textContent = formatNumber(balance)
     }
     
     // Функция обновления прогресса
@@ -66,10 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
             requiredForUpgrade += 50
             
             // Обновляем интерфейс
-            levelSpan.textContent = level
+
             userUpgrade.textContent = clickPower
             updateProgress()
-            
+        
             // Показываем уведомление
             alert(`Уровень повышен! Теперь ${clickPower} за клик`)
         }
