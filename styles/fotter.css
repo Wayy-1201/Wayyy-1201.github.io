@@ -4,7 +4,6 @@
     color: white;
     text-align: center;
     width: 100%;
-    flex-shrink: 0;
 }
 
 footer {
@@ -16,7 +15,6 @@ footer {
     justify-content: space-around;
     flex-wrap: nowrap;
     width: 100%;
-    max-width: 350px;
     margin: 0 auto;
 }
 
