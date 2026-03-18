@@ -4,6 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent; /* Для мобильных браузеров */
+    -webkit-touch-callout: none; /* Отключает меню при долгом нажатии */
+    -webkit-user-select: none; /* Для Safari */
+    -khtml-user-select: none; /* Для Konqueror */
+    -moz-user-select: none; /* Для Firefox */
+    -ms-user-select: none; /* Для IE/Edge */
+    user-select: none; /* Стандартный синтаксис */
 }
 
 body {
